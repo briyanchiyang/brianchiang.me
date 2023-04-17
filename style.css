@@ -1,3 +1,76 @@
 body {
-    background-color: lightblue;
+    background-color: rgb(34,34,34);
   }
+
+.main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    height: 300px;
+
+}
+
+.main-left{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid gray;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-right {
+    display: flex;
+    border: 5px solid gray;
+    justify-content: center;
+}
+
+img {
+    max-height: 300px;
+    width: 500px;
+}
+
+.main-header {
+    display: inline-block;
+    color: white;
+    font-size: 60px;
+    margin: 0;
+}
+
+.sub-header {
+    color: rgb(200,200,200);
+    margin: 0;
+}
+
+/* Links under name*/
+.links{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    height: 50px;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+
+    /* Button hidden */ 
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    color: black;
+    background-color: white;
+
+    /* Button gets shown */ 
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+}
